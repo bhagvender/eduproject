@@ -260,7 +260,7 @@ body {
 .btn:is(:hover, :focus)::before { transform: translateX(0); }
 
 .img-holder {
-  aspect-ratio: var(--width) / var(--height);
+   aspect-ratio: var(--width) / var(--height); 
   background-color: var(--light-gray);
   overflow: hidden;
 }
@@ -1399,5 +1399,19 @@ body {
     top: 0;
     left: 0;
   }
+
+  .video-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.video-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
 
 }
